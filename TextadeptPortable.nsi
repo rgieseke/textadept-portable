@@ -88,9 +88,9 @@ Section "Main"
   ; Launch Textadept
   StrCpy $PROGRAMDIRECTORY "$EXEDIR\App\${DEFAULTAPPDIR}"
   ${If} $PARAMETERS == ""
-    StrCpy "$EXECSTRING" "$PROGRAMDIRECTORY\${DEFAULTEXE} -u $EXEDIR\Data\.textadept\"
+    StrCpy "$EXECSTRING" "$PROGRAMDIRECTORY\${DEFAULTEXE} -u $\"$EXEDIR\Data\.textadept\$\""
   ${Else}
-    StrCpy "$EXECSTRING" "$PROGRAMDIRECTORY\${DEFAULTEXE} -u $EXEDIR\Data\.textadept\ $PARAMETERS"
+    StrCpy "$EXECSTRING" "$PROGRAMDIRECTORY\${DEFAULTEXE} -u $\"$EXEDIR\Data\.textadept\$\" $PARAMETERS"
   ${EndIf}
   ExecWait $EXECSTRING
 
