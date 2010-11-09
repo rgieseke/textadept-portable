@@ -1,4 +1,7 @@
-Textadept Portable is a launcher for Textadept.
+Textadept Portable
+==================
+
+A launcher for the Textadept editor.
 
 It includes the necessary GTK+ libraries and can be run from a portable USB
 drive without installing anything.
