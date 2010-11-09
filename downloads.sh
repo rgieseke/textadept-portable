@@ -1,5 +1,5 @@
 #!/bin/bash
-TA_VERSION=3.3
+TA_VERSION=3.4
 TA_DOWNLOAD=http://textadept.googlecode.com/files/textadept_${TA_VERSION}.win32.zip
 TA_ZIPFILE=textadept_${TA_VERSION}.win32.zip
 NSIS_VERSION=2.46

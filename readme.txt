@@ -18,8 +18,8 @@ downloads.sh
 Then run on Windows:
 build.bat
 
-Finally a zip can be created (Linux command):
-zip -r TextadeptPortable TextadeptPortable
+Finally a zip can be created (Linux shell script):
+pack.sh
 
 NSIS
 ====
@@ -62,7 +62,7 @@ Download Textadept:
 http://code.google.com/p/textadept/
 
 Current version:
-http://textadept.googlecode.com/files/textadept_3.3.win32.zip
+http://textadept.googlecode.com/files/textadept_3.4.win32.zip
 
 Unzip to App\Textadept
 

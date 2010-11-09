@@ -4,7 +4,7 @@ REM Textadept Portable build script
 
 set GTK_VERSION=2.22.0-2010-10-01
 set NSIS_VERSION=2.46
-set TA_VERSION=3.3
+set TA_VERSION=3.4
 
 REM create directory structure
 REM TextadeptPortable
