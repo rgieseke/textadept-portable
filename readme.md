@@ -3,11 +3,15 @@ Textadept Portable
 
 A launcher for the Textadept editor.
 
-It includes the necessary GTK+ libraries and can be run from a portable USB
-drive without installing anything.
+Textadept Portable can run from a portable USB
+drive without installing anything. The current version of Textadept needs to
+be downloaded from <http://code.google.com/p/textadept/downloads/list> and
+be unpacked and renamed to TextadeptPortable\App\Textadept
 The .textadept directory is placed in TextadeptPortable\Data.
 
-See below for the necessary steps for building Textadept Portable.
+* * *
+
+See below for the necessary steps for building the Textadept Portable launcher.
 See http://www.portableapps.com and
 http://portableapps.com/development/portableapps.com_format for an
 explanation of the format.
@@ -35,7 +39,7 @@ http://downloads.sourceforge.net/portableapps/NSISPortable_2.46_English.paf.exe
 Directory Structure
 ===================
 Create directory structure:
-AppNamePortable
+TextadeptPortable
 + App
   + AppInfo
   + AppName
@@ -46,32 +50,9 @@ AppNamePortable
     + Images
   + Source
 
-GTK
-===
-Download GTK-Installer.
-http://gtk-win.sourceforge.net/home/index.php/en/Downloads
-
-Current version:
-http://downloads.sourceforge.net/gtk-win/gtk2-runtime-2.22.0-2010-10-01-ash.exe
-
-Install to App\GTK
-See also: http://gtk-win.sourceforge.net/home/index.php/Embedding
-
-gtk2-runtime-gtk2-runtime-2.22.0-2010-10-01-ash /S /sideeffects=no /D=%CD%\TextadeptPortable\App\GTK
-
-Textadept
-=========
-Download Textadept:
-http://code.google.com/p/textadept/
-
-Current version:
-http://textadept.googlecode.com/files/textadept_3.4.win32.zip
-
-Unzip to App\Textadept
-
 Textadept Portable
 ==================
-The source code for the Portable Launcher is to be placed in
+The source code for the Portable Launcher is in
 TextadeptPortable\Data\Other\Source
 Copy icons and rename them to TextadeptPortable\App\AppInfo (see build.bat).
 

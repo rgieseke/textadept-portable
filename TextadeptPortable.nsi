@@ -20,7 +20,7 @@
 !define LAUNCHERNAME "TextadeptPortable"
 !define PORTABLEAPPNAME "Textadept Portable"
 !define APPNAME "Textadept"
-!define VER "3.3.0.0"
+!define VER "1.0.0.0"
 !define DEFAULTEXE "textadept.exe"
 !define DEFAULTAPPDIR "Textadept"
 
@@ -57,9 +57,6 @@ SetDatablockOptimize On
 
 Var PARAMETERS
 Var PROGRAMDIRECTORY
-Var ORIGPATH
-Var GTKDIRECTORY
-Var NEWPATH
 Var EXECSTRING
 Var EXISTSFILECHOOSER
 Var EXISTSXBEL
@@ -72,22 +69,13 @@ Section "Main"
   IfFileExists "$APPDATA\gtk-2.0\gtkfilechooser.ini" 0 +2
 	  StrCpy $EXISTSFILECHOOSER "true"
 
-  ; Add GTK to path
-  StrCpy $GTKDIRECTORY "$EXEDIR\App\GTK"
-  ReadEnvStr "$ORIGPATH" "PATH"
-  ; Check Windows version, very long path did not work on Win 2000
-  ${If} ${IsWin2000}
-    StrCpy $NEWPATH "$GTKDIRECTORY\bin"
-  ${Else}
-    StrCpy $NEWPATH "$GTKDIRECTORY\bin;$ORIGPATH"
-  ${EndIf}
-  System::Call 'Kernel32::SetEnvironmentVariableA(t, t) i("PATH", "$NEWPATH").r0'
-
   ; Get command line parameters
   ${GetParameters} $PARAMETERS
   ; Launch Textadept
   StrCpy $PROGRAMDIRECTORY "$EXEDIR\App\${DEFAULTAPPDIR}"
   StrCpy "$EXECSTRING" "$PROGRAMDIRECTORY\${DEFAULTEXE} -u $\"$EXEDIR\Data\.textadept$\""
+  IfFileExists "$PROGRAMDIRECTORY\${DEFAULTEXE}" +2 0
+    messageBox MB_OK "Error: textadept.exe not found. Textadept needs to be downloaded from http://code.google.com/p/textadept/ and unpacked into 'TextadeptPortable\App\Textadept'."
   ${If} $PARAMETERS != ""
     StrCpy "$EXECSTRING" "$EXECSTRING $PARAMETERS"
   ${EndIf}
