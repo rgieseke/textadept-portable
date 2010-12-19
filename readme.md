@@ -4,14 +4,16 @@ Textadept Portable
 A launcher for the Textadept editor.
 
 Textadept Portable can run from a portable USB
-drive without installing anything. The current version of Textadept needs to
-be downloaded from <http://code.google.com/p/textadept/downloads/list> and
-be unpacked and renamed to `TextadeptPortable\App\Textadept`.
+drive without installing anything.
 The `.textadept` directory is placed in TextadeptPortable\Data.
 
 Download
 ========
 <https://github.com/downloads/rgieseke/textadept-portable/TextadeptPortable.zip>
+
+Note that this is only the launcher, you need to download the current
+version of Textadept from <http://code.google.com/p/textadept/downloads/list> and
+unpack and copy it to `TextadeptPortable\App\Textadept`.
 
 Building the launcher yourself
 ==============================
