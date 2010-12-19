@@ -46,16 +46,17 @@ Current version:
 Directory Structure
 ===================
 Create directory structure:
-TextadeptPortable
->+ App
->  + AppInfo
->  + AppName
->  + DefaultData
->+ Data
->+ Other
->  + Help
->    + Images
->  + Source
+
+    TextadeptPortable
+        App
+        + AppInfo
+        + AppName
+        + DefaultData
+        Data
+        Other
+        + Help
+          + Images
+        + Source
 
 Textadept Portable
 ==================
