@@ -9,7 +9,12 @@ be downloaded from <http://code.google.com/p/textadept/downloads/list> and
 be unpacked and renamed to TextadeptPortable\App\Textadept
 The .textadept directory is placed in TextadeptPortable\Data.
 
-* * *
+Download
+========
+<https://github.com/rgieseke/textadept-portable/downloads>
+
+Building the launcher yourself
+==============================
 
 See below for the necessary steps for building the Textadept Portable launcher.
 See http://www.portableapps.com and
