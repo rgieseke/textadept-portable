@@ -11,7 +11,7 @@ The .textadept directory is placed in TextadeptPortable\Data.
 
 Download
 ========
-<https://github.com/rgieseke/textadept-portable/downloads>
+<https://github.com/downloads/rgieseke/textadept-portable/TextadeptPortable.zip>
 
 Building the launcher yourself
 ==============================
