@@ -12,7 +12,7 @@ Download
 <https://github.com/downloads/rgieseke/textadept-portable/TextadeptPortable.zip>
 
 Note that this is only the launcher, you need to download the current
-version of Textadept from <http://code.google.com/p/textadept/downloads/list> and
+version of Textadept from <http://foicica.com/textadept/download> and
 unpack and copy it to `TextadeptPortable\App\Textadept`.
 
 Building the launcher yourself
